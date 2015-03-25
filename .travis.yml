@@ -6,4 +6,6 @@ compiler:
   - clang
 jdk:
   - oraclejdk8
-script: ./compile.sh
+script:
+  - jdk_switcher use oraclejdk8
+  - ./compile.sh
